@@ -1,17 +1,24 @@
 import { useState } from 'react'
 
-const Button = ({ initialText }) => {
-  const [buttonText, setButtonText] = useState(initialText)
+const Button = () => {
+  const [count, setCount] = useState(0)
 
-  const handleButtonClick = () => {
-    setButtonText((prevText) => {
-      return prevText === 'Сlick me please...' ? 'Click me to go back please...' : 'Сlick me please...'
-    })
+  const incrementCount = () => {
+    setCount(count + 1)
+  }
+  const decrementCount = () => {
+    count > 0 ? setCount(count - 1) : count(0)
+  }
+  const resetCount = () => {
+    setCount(0)
   }
 
   return (
     <div>
-      <button onClick={handleButtonClick}>{buttonText}</button>
+      <p>Count: {count}</p>
+      <button onClick={incrementCount}>Increment</button>
+      <button onClick={resetCount}>Reset</button>
+      <button onClick={decrementCount}>Decrement</button>
     </div>
   )
 }

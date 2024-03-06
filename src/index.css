@@ -7,6 +7,13 @@
 h1 {
   margin-bottom: 30px;
 }
+h2 {
+  margin: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
 
 body {
   font-size: 25px;
@@ -20,9 +27,7 @@ body {
 
 button {
   font-size: 25px;
-  margin: 10px;
+  margin: 5px;
   padding: 10px;
   font-family: inherit;
-  box-sizing: border-box;
-  margin: 0;
 }
