@@ -1,14 +1,14 @@
-import Button from './components/Button.jsx'
-import Description from './components/Description.jsx'
-import ButtonClass from './/components/ClassComponent.jsx'
+import ControlledForm from './components/ControlledForm.jsx'
+import ServerRequestComponent from './components/ServerRequestComponent.jsx'
+import UncontrolledForm from './components/UncontrolledForm.jsx'
 
 const App = () => {
   return (
     <div>
-      <h1>My-first-React-app</h1>
-      <Button initialText="Сlick me please..." />
-      <Description text="By class" />
-      <ButtonClass />
+      <h1>React: Components, Hooks, and Data Handling</h1>
+      <ControlledForm />
+      <UncontrolledForm />
+      <ServerRequestComponent />
     </div>
   )
 }
