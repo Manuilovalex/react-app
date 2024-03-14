@@ -1,14 +1,12 @@
-import ControlledForm from './components/ControlledForm.jsx'
 import ServerRequestComponent from './components/ServerRequestComponent.jsx'
-import UncontrolledForm from './components/UncontrolledForm.jsx'
 
 const App = () => {
   return (
     <div>
-      <h1>React: Components, Hooks, and Data Handling</h1>
-      <ControlledForm />
-      <UncontrolledForm />
-      <ServerRequestComponent />
+      <h1>React Hooks Lifecycle. Global and Local Styling in React. Preprocessors</h1>
+      <div>
+        <ServerRequestComponent />
+      </div>
     </div>
   )
 }

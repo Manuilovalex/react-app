@@ -2,6 +2,6 @@ My-first-React-app
 
 Vite
 
-React під контролем: Від стану до запитів (React: Components, Hooks, and Data Handling)
+React Hooks Lifecycle. Global and Local Styling in React. Preprocessors
 
 Запустuть проект -  yarn dev

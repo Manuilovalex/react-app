@@ -15,12 +15,13 @@ body {
   background-color: #e4e2e2;
 }
 
-h2 {
+h2,
+h3 {
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
   padding: 10px;
-  border-top: #616161 solid 1px;
+  color: indigo;
 }
 label {
   font-weight: bold;
@@ -30,14 +31,12 @@ label {
 }
 
 h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
   font-family: 'Helvetica', sans-serif;
-  font-weight: bold;
-  color: #007bff;
+  font-weight: bolder;
+  color: blue;
 }
 
 a {
@@ -51,7 +50,9 @@ a:hover {
 
 ul,
 ol {
-  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
   list-style: none;
 }
 
@@ -66,13 +67,15 @@ button {
 
 input,
 select {
-  min-width: 250px;
+  max-width: 100px;
+  text-align: center;
 }
 
 button {
   cursor: pointer;
   background-color: #007bff;
   color: #fff;
+  border-radius: 5px;
   border: none;
   margin: 10px;
   padding: 0.5em 1em;
@@ -81,3 +84,34 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+.error {
+  font-size: larger;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bolder;
+  color: red;
+}
+
+.userList {
+  margin-left: 20px;
+  list-style: type;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  border-top: #616161 solid 1px;
+}
+
+.container-userList,
+.container-userInput {
+  width: 300px; /* Задаем фиксированную ширину для каждого контейнера */
+}
+
+@media (max-width: 700px) {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
