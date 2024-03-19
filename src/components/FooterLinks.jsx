@@ -4,7 +4,7 @@ const FooterLinks = () => {
   return (
     <footer>
       <div>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contacts">Contacts</Link>
       </div>

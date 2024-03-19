@@ -5,7 +5,7 @@ const Menu = () => {
     <nav>
       <ul>
         <li>
-          <NavLink to="/home" className={({ isActive }) => (isActive ? 'link activeLink' : 'link')}>
+          <NavLink to="/" className={({ isActive }) => (isActive ? 'link activeLink' : 'link')}>
             Home
           </NavLink>
         </li>

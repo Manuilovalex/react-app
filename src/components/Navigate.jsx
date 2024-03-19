@@ -9,7 +9,7 @@ const Navigate = ({ destination }) => {
 
   return (
     <div className="Navigate">
-      <button onClick={handleButtonClick}>{destination}</button>
+      <button onClick={handleButtonClick}>{destination? destination : 'home'}</button>
     </div>
   )
 }
