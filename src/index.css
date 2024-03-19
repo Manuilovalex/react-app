@@ -5,6 +5,7 @@
 }
 
 body {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -15,103 +16,39 @@ body {
   background-color: #e4e2e2;
 }
 
-h2,
-h3 {
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-  padding: 10px;
-  color: indigo;
+.activeLink,
+nav .active {
+  background-color: red;
+  color: rgb(192, 7, 7);
 }
-label {
-  font-weight: bold;
-  font-size: larger;
-  margin-top: 15px;
-  display: block;
-}
-
-h1,
-h4,
-h5,
-h6 {
-  font-family: 'Helvetica', sans-serif;
-  font-weight: bolder;
-  color: blue;
-}
-
 a {
-  color: #007bff;
-  text-decoration: none;
+  margin: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-ul,
-ol {
-  font-weight: bold;
-  text-align: center;
-  font-size: large;
+nav ul {
   list-style: none;
-}
-
-input,
-textarea,
-select,
-button {
-  font-size: 1em;
-  margin: 5px;
-  padding: 0.5em;
-}
-
-input,
-select {
-  max-width: 100px;
-  text-align: center;
-}
-
-button {
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  border: none;
-  margin: 10px;
-  padding: 0.5em 1em;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.error {
-  font-size: larger;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: bolder;
-  color: red;
-}
-
-.userList {
-  margin-left: 20px;
-  list-style: type;
-}
-
-.container {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
-  border-top: #616161 solid 1px;
+  gap: 20px;
 }
 
-.container-userList,
-.container-userInput {
-  width: 300px; /* Задаем фиксированную ширину для каждого контейнера */
+footer {
+  margin: 20px;
 }
 
-@media (max-width: 700px) {
-  .container {
-    align-items: center;
-    flex-direction: column;
-  }
+button {
+  padding: 10px;
 }
 
+.Navigate {
+  display: inline-flex;
+  padding: 10px;
+  margin: 5px;
+}
+
+.link {
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(182, 182, 182);
+}
