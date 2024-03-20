@@ -7,7 +7,7 @@ import NotFound from './components/NotFound'
 import Menu from './components/Menu'
 import FooterLinks from './components/FooterLinks'
 
-export const PropContext = createContext()
+export const PropContext = createContext('default')
 
 const App = () => {
   const propValue = 'hello from App component'
