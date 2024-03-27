@@ -1,4 +1,3 @@
-import { createContext } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
@@ -6,14 +5,13 @@ import Contacts from './components/Contacts'
 import NotFound from './components/NotFound'
 import Menu from './components/Menu'
 import FooterLinks from './components/FooterLinks'
-
-export const PropContext = createContext('default')
+import { Provider } from 'react-redux'
+import store from './components/redux/store'
 
 const App = () => {
-  const propValue = 'hello from App component'
   return (
-    <BrowserRouter>
-      <PropContext.Provider value={propValue}>
+    <Provider store={store}>
+      <BrowserRouter>
         <Menu />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,8 +20,8 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <FooterLinks />
-      </PropContext.Provider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Provider>
   )
 }
 
