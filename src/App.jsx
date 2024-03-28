@@ -6,7 +6,7 @@ import NotFound from './components/NotFound'
 import Menu from './components/Menu'
 import FooterLinks from './components/FooterLinks'
 import { Provider } from 'react-redux'
-import store from './components/redux/store'
+import store from './redux/store'
 
 const App = () => {
   return (
